@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="vue.js">
+
+    </script>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:'#box',
+                data:{
+        url:'https://www.baidu.com/img/bd_logo1.png',
+                    w:'200px',
+                    t:'图片'
+                },
+                methods:{
+
+
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div id="box">
+
+       <!--<img src="{{url}}" alt="">-->
+    <br>
+    <img :src="url" alt="" :width="w" :title="t">
+
+</div>
+</body>
+</html>

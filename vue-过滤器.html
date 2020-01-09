@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="vue.js">
+
+    </script>
+    <style>
+        
+    </style>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:'#box',
+                data: {
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div id="box">
+    {{'WELCOME'|lowercase|capitalize}}
+    <br>
+    {{'welcome'|uppercase}}
+
+</div>
+</body>
+</html>

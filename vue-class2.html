@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="vue.js">
+
+    </script>
+    <style>
+        .red{
+            color:red;
+        }
+        .blue{
+          background-color: blue;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el:'#box',
+                data:{
+               red:'red',
+                    b:'blue'
+                },
+                methods:{
+
+
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+<div id="box">
+
+
+    <strong :class="[red,b]">文字.....</strong>
+
+</div>
+</body>
+</html>
